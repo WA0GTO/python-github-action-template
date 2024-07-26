@@ -1,0 +1,24 @@
+name: Upload status.log to S3
+
+on:
+  push:
+    branches:
+      - main  # Change this to the branch you want to trigger the action
+
+jobs:
+  upload_to_s3:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: arn:aws:iam::163743247939:role/6b11a2f0-4b8b-11ef-9677-02a15931dab3-GitHubDeploymentRole
+          aws-region: ap-southeast-2  # e.g., us-west-2
+
+      - name: Upload status.log to S3
+        run: |
+          aws s3 cp status.log s3://ec-class-data/log/status.log --region us-east-1
