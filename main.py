@@ -36,11 +36,11 @@ def upload_log_to_s3(bucket_name, file_path):
 if __name__ == "__main__":
     logger.info(f"Token value: {SOME_SECRET}")
 
-    r = requests.get('https://weather.talkpython.fm/api/weather/?city=Berlin&country=DE')
+    r = requests.get('https://goweather.herokuapp.com/weather/austin')
     if r.status_code == 200:
         data = r.json()
-        temperature = data["forecast"]["temp"]
-        logger.info(f'Weather in Berlin: {temperature}')
+        temperature = data['temperature']
+        logger.info(f'Weather in Austin: {temperature}')
 
     # Upload log file to S3
     BUCKET_NAME = "ec-class-data"
