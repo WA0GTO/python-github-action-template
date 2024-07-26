@@ -21,9 +21,9 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::163743247939:role/6b11a2f0-4b8b-11ef-9677-02a15931dab3-GitHubDeploymentRole
+          role-to-assume: arn:aws:iam::163743247939:role/690ed370-4b9e-11ef-b564-02032ef24423-GitHubDeploymentRole
           aws-region: ap-southeast-2  # e.g., us-west-2
-          role-session-name: 6b11a2f0-4b8b-11ef-9677-02a15931dab3-GitHubDeploymentRole
+          role-session-name: 690ed370-4b9e-11ef-b564-02032ef24423-GitHubDeploymentRole
 
       - name: Debug AWS credentials
         run: |
