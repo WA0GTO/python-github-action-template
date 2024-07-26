@@ -3,3 +3,8 @@
 2024-05-10 17:30:07,757 - __main__ - INFO - Token value: 1234
 2024-05-10 17:37:03,484 - __main__ - INFO - Token value: 1234
 2024-05-10 17:51:37,785 - __main__ - INFO - Token value: woodside@1234
+2024-07-26 15:57:34,311 - __main__ - INFO - Token value: Token not available!
+2024-07-26 16:01:09,928 - __main__ - INFO - Token value: Token not available!
+2024-07-26 16:06:17,166 - __main__ - INFO - Token value: Token not available!
+2024-07-26 16:07:40,060 - __main__ - INFO - Token value: Token not available!
+2024-07-26 16:07:40,897 - __main__ - ERROR - Failed to upload status.log to bucket ec-class-data: Error loading SSO Token: The SSO access token has either expired or is otherwise invalid.
