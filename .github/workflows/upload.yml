@@ -8,6 +8,7 @@ on:
 jobs:
   upload_to_s3:
     runs-on: ubuntu-latest
+    environment: Production
 
     steps:
       - name: Checkout repository
