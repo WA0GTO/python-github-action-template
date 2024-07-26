@@ -5,6 +5,10 @@ on:
     branches:
       - main  # Change this to the branch you want to trigger the action
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   upload_to_s3:
     runs-on: ubuntu-latest
